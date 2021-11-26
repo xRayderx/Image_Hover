@@ -1,0 +1,41 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	display: grid;
+	place-content: center;
+	background: #0B0C10;
+}
+
+.wrapper{
+	position: relative;
+	width: 550px;
+	height: 550px;
+	margin-top: 50px;
+}
+
+.wrapper .img1{
+	width: 550px;
+	height: 550px;
+	border-radius: 2px;
+}
+
+.wrapper img.img2{
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	opacity: 0;
+	width: 550px;
+	height: 550px;
+	border-radius: 2px;
+	transition: opacity .6s;
+}
+
+.wrapper img.img2:hover{
+	opacity: 1;
+}
